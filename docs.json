@@ -1,9 +1,9 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
+  "$schema": "https://mintlify.com/docs.json",
   "name": "Ayliea Docs",
   "logo": {
-    "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "light": "/logo/light.png",
+    "dark": "/logo/dark.png"
   },
   "favicon": "/favicon.png",
   "colors": {
@@ -11,54 +11,89 @@
     "light": "#EF4444",
     "dark": "#B91C1C"
   },
-  "topbarLinks": [
-    { "name": "Support", "url": "mailto:support@ayliea.com" }
-  ],
-  "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://ayliea.com"
-  },
-  "navigation": [
-    {
-      "group": "Getting Started",
-      "pages": [
-        "introduction",
-        "getting-started/quickstart",
-        "getting-started/creating-account",
-        "getting-started/your-first-assessment"
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "getting-started/quickstart",
+              "getting-started/creating-account",
+              "getting-started/your-first-assessment"
+            ]
+          },
+          {
+            "group": "Product Guide",
+            "pages": [
+              "product/dashboard",
+              "product/assessments",
+              "product/scoring",
+              "product/recommendations",
+              "product/reports",
+              "product/organizations"
+            ]
+          },
+          {
+            "group": "Compliance Frameworks",
+            "pages": [
+              "frameworks/overview",
+              "frameworks/cis-v8",
+              "frameworks/nist-800-53",
+              "frameworks/nist-csf",
+              "frameworks/hipaa",
+              "frameworks/iso-27001",
+              "frameworks/soc-2",
+              "frameworks/pci-dss",
+              "frameworks/ai-security"
+            ]
+          },
+          {
+            "group": "Changelog",
+            "pages": ["changelog/2026"]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Blog",
+          "href": "https://ayliea.com/blog",
+          "icon": "newspaper"
+        }
       ]
-    },
-    {
-      "group": "Product Guide",
-      "pages": [
-        "product/dashboard",
-        "product/assessments",
-        "product/scoring",
-        "product/recommendations",
-        "product/reports",
-        "product/organizations"
-      ]
-    },
-    {
-      "group": "Compliance Frameworks",
-      "pages": [
-        "frameworks/overview",
-        "frameworks/cis-v8",
-        "frameworks/nist-800-53",
-        "frameworks/nist-csf",
-        "frameworks/hipaa",
-        "frameworks/iso-27001",
-        "frameworks/soc-2",
-        "frameworks/pci-dss",
-        "frameworks/ai-security"
-      ]
-    },
-    {
-      "group": "Changelog",
-      "pages": ["changelog/2026"]
     }
-  ],
-  "footerSocials": {
-    "linkedin": "https://linkedin.com/company/ayliea"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@ayliea.com"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Get Started",
+      "href": "https://ayliea.com"
+    }
+  },
+  "contextual": {
+    "options": [
+      "copy",
+      "view",
+      "claude",
+      "chatgpt",
+      "perplexity",
+      "cursor",
+      "vscode"
+    ]
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://linkedin.com/company/ayliea"
+    }
   }
 }
